@@ -13,36 +13,77 @@ export default function CaseLayout({
     children: React.ReactNode;
 }) {
     return (
-        <section className="min-h-screen w-full px-6 py-20 sm:py-28 relative">
-            {/* subtle overlay glow */}
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle,rgba(0,120,200,0.08),transparent_40%)] blur-[90px]" />
+        <section
+            className="
+                min-h-screen w-full 
+                px-4 sm:px-6 
+                py-24 sm:py-32 
+                relative
+            "
+        >
+            {/* Futuristic Mist Glow */}
+            <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 0.28, scale: 1 }}
+                transition={{ duration: 2 }}
+                className="
+                    absolute inset-0 -z-10
+                    bg-[radial-gradient(circle,rgba(0,150,255,0.14),transparent_70%)]
+                    blur-2xl
+                "
+            />
 
             <div className="max-w-4xl mx-auto select-none">
+                {/* Heading Block */}
                 <Reveal>
-                    <div className="mb-8 sm:mb-12">
-                        <motion.h1
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.6 }}
-                            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_22px_rgba(0,200,255,0.2)]"
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7 }}
+                        className="mb-10 sm:mb-14"
+                    >
+                        <h1
+                            className="
+                                text-4xl sm:text-5xl md:text-6xl
+                                font-bold 
+                                text-white
+                                drop-shadow-[0_0_25px_rgba(0,200,255,0.25)]
+                                leading-tight
+                            "
                         >
                             {title}
-                        </motion.h1>
+                        </h1>
 
-                        <motion.p
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.6, delay: 0.08 }}
-                            className="mt-4 text-cyan-200/80 text-base sm:text-lg max-w-2xl"
+                        <p
+                            className="
+                                mt-4 
+                                text-base sm:text-lg md:text-xl 
+                                text-cyan-200/80 
+                                leading-relaxed 
+                                drop-shadow-[0_0_12px_rgba(0,200,255,0.2)]
+                                max-w-2xl
+                            "
                         >
                             {subtitle}
-                        </motion.p>
+                        </p>
 
-                        <div className="mt-6 h-px w-full bg-gradient-to-r from-transparent via-cyan-400/25 to-transparent" />
-                    </div>
+                        <div
+                            className="
+                                mt-6 
+                                h-[1px] w-full 
+                                bg-gradient-to-r 
+                                from-transparent 
+                                via-cyan-400/30 
+                                to-transparent
+                            "
+                        />
+                    </motion.div>
                 </Reveal>
 
-                <div className="space-y-16 sm:space-y-20">{children}</div>
+                {/* Content */}
+                <div className="space-y-16 sm:space-y-20 md:space-y-24">
+                    {children}
+                </div>
             </div>
         </section>
     );

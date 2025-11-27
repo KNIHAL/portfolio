@@ -7,22 +7,38 @@ export default function About() {
     return (
         <section
             id="about"
-            className="min-h-screen w-full flex items-center justify-center px-6 py-32"
+            className="
+                min-h-screen w-full 
+                flex items-center justify-center 
+                px-4 sm:px-6 
+                py-24 sm:py-32
+            "
         >
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
+            <div
+                className="
+                    max-w-6xl mx-auto
+                    grid grid-cols-1 md:grid-cols-2
+                    gap-12 sm:gap-16
+                    items-center relative
+                "
+            >
 
                 {/* Glow Background */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 0.35, scale: 1 }}
+                    whileInView={{ opacity: 0.28, scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 2 }}
-                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-                     w-[800px] h-[800px]
-                     bg-[radial-gradient(circle,rgba(80,0,255,0.30),transparent_70%)]
-                     blur-3xl -z-10"
+                    className="
+                        absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                        w-[520px] h-[520px] sm:w-[780px] sm:h-[780px]
+                        bg-[radial-gradient(circle,rgba(80,0,255,0.25),transparent_70%)]
+                        blur-xl sm:blur-2xl
+                        -z-10
+                    "
                 />
 
-                {/* LEFT — Your Photo */}
+                {/* LEFT — Photo */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +46,15 @@ export default function About() {
                     transition={{ duration: 0.9 }}
                     className="flex justify-center"
                 >
-                    <div className="relative w-70 h-100 rounded-4xl overflow-hidden border border-cyan-400/30 shadow-[0_0_25px_rgba(0,200,255,0.35)]">
+                    <div
+                        className="
+                            relative
+                            w-56 h-72 sm:w-72 sm:h-96
+                            rounded-3xl overflow-hidden
+                            border border-cyan-400/25
+                            shadow-[0_0_14px_rgba(0,200,255,0.25)]
+                        "
+                    >
                         <Image
                             src="/nihal.jpg"
                             alt="Nihal"
@@ -39,31 +63,55 @@ export default function About() {
                         />
 
                         {/* Glow Ring */}
-                        <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle,rgba(0,200,255,0.25),transparent_70%)] mix-blend-overlay" />
+                        <div
+                            className="
+                                absolute inset-0 rounded-3xl
+                                bg-[radial-gradient(circle,rgba(0,200,255,0.22),transparent_70%)]
+                                mix-blend-overlay
+                            "
+                        />
                     </div>
                 </motion.div>
 
-                {/* RIGHT — Text Content */}
+                {/* RIGHT — Content */}
                 <motion.div
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.9 }}
-                    className="text-center md:text-left select-none"
+                    className="text-center md:text-left select-none px-1"
                 >
-                    <h2 className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_25px_rgba(0,200,255,0.25)]">
+                    <h2
+                        className="
+                            text-4xl sm:text-5xl md:text-6xl
+                            font-bold text-white
+                            drop-shadow-[0_0_25px_rgba(0,200,255,0.25)]
+                        "
+                    >
                         About Me
                     </h2>
 
-                    <p className="mt-8 text-lg md:text-xl text-cyan-200/80 leading-relaxed drop-shadow-[0_0_10px_rgba(0,200,255,0.35)]">
-                        I am a <span className="text-cyan-300 font-medium">Product Builder</span>
-                        who combines system design, product thinking, and rapid execution.
+                    <p
+                        className="
+                            mt-6 sm:mt-8
+                            text-base sm:text-lg md:text-xl
+                            text-cyan-200/80 leading-relaxed
+                            drop-shadow-[0_0_10px_rgba(0,200,255,0.25)]
+                        "
+                    >
+                        I am a{" "}
+                        <span className="text-cyan-300 font-medium">
+                            Product Builder
+                        </span>{" "}
+                        who combines system design, product thinking, and
+                        rapid execution.
                         <br /><br />
-                        I work like a modern tech generalist — designing clean systems,
-                        understanding problems deeply, and turning ideas into real products.
+                        I work like a modern tech generalist —
+                        understanding problems deeply and turning ideas into real,
+                        usable, smooth digital products.
                         <br /><br />
-                        I use AI to accelerate
-                        execution and focus more on clarity, strategy, and decision-making.
+                        I use AI to accelerate execution so I can focus on
+                        clarity, strategy, and decision-making.
                     </p>
                 </motion.div>
             </div>

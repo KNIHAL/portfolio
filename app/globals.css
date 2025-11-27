@@ -191,3 +191,21 @@ body {
 }
 
 
+/* GLOBAL MOBILE SPACING FIX */
+@media (max-width: 640px) {
+  section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .mobile-center {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mobile-stack {
+    flex-direction: column !important;
+    gap: 1.4rem !important;
+  }
+}

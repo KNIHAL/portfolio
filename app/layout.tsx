@@ -3,7 +3,6 @@ import "./globals.css";
 import FuturisticBackground from "@/components/FuturisticBackground";
 import NavbarWrapper from "@/components/NavbarWrapper";
 import MotionWrapper from "@/components/MotionWrapper";   // Client version
-
 import { metadata } from "./metadata";
 export { metadata };
 
