@@ -21,12 +21,16 @@ export default function Navbar() {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-6xl px-4 sm:px-6"
+            className="
+                fixed top-4 left-0 right-0 z-50 
+                px-4 sm:px-6
+            "
         >
             <nav
                 className="
-                    w-full flex items-center justify-between
-                    px-6 py-3
+                    w-full max-w-4xl mx-auto
+                    flex items-center justify-between
+                    px-5 py-3
                     backdrop-blur-xl bg-white/5
                     border border-cyan-500/20 rounded-2xl
                     shadow-[0_0_18px_rgba(0,200,255,0.25)]
@@ -34,15 +38,19 @@ export default function Navbar() {
             >
                 {/* Left — Logo */}
                 <div
-                    className="hover:text-white transition
-                                hover:drop-shadow-[0_0_6px_rgba(0,200,255,0.9)] text-xl font-semibold tracking-widest text-cyan-300 drop-shadow-[0_0_6px_rgba(0,200,255,0.5)]"
+                    className="
+                        hover:text-white transition
+                        hover:drop-shadow-[0_0_6px_rgba(0,200,255,0.9)]
+                        text-xl font-semibold tracking-widest 
+                        text-cyan-300 drop-shadow-[0_0_6px_rgba(0,200,255,0.5)]
+                    "
                     style={{ fontFamily: "monospace" }}
                 >
                     KNIhal
                 </div>
 
                 {/* Desktop Nav */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center gap-6">
                     {navItems.map((item) => (
                         <Link
                             key={item.name}
@@ -84,6 +92,7 @@ export default function Navbar() {
                         transition={{ duration: 0.4 }}
                         className="
                             md:hidden mt-3 px-6 py-5
+                            w-full max-w-4xl mx-auto
                             rounded-2xl backdrop-blur-xl bg-white/5
                             border border-cyan-500/20
                             shadow-[0_0_18px_rgba(0,200,255,0.25)]

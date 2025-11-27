@@ -209,3 +209,6 @@ body {
     gap: 1.4rem !important;
   }
 }
+html, body {
+  overflow-x: hidden;
+}

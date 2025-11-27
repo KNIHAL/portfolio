@@ -9,164 +9,160 @@ export default function ESmartyPage() {
     return (
         <CaseLayout
             title="eSmarty"
-            subtitle="A Gemini-powered AI browser extension built to remove context-switching and accelerate learning, debugging, and comprehension directly inside the same tab."
+            subtitle="A Gemini-powered Chrome extension built to solve my own developer pain — switching tabs constantly just to debug, understand, or read anything."
         >
 
-            {/* STORY: START */}
+            {/* STORY BEGINNING */}
             <div>
                 <SectionTitle>Where eSmarty Started</SectionTitle>
                 <SectionText>
-                    eSmarty started from a simple frustration —
-                    developers and learners switch between tabs **way too often**.
+                    eSmarty didn’t begin as a side project.
+                    It began as a <b>pain point</b>.
                     <br /><br />
-                    One moment you're reading documentation,
-                    the next you're on ChatGPT asking for explanation,
-                    then back to VS Code to fix the issue,
-                    then back again to copy the next error.
+                    When I started learning <b>AI agent development</b>
+                    (specifically using CrewAI’s backend framework),
+                    I faced a huge challenge:
+                    <br />
+                    <i>AI agents were backend-only… but I didn’t know web development yet.</i>
                     <br /><br />
-                    Every switch breaks focus.
-                    Every switch slows you down.
-                    I wanted to remove that friction completely.
+                    Every time I needed a UI, I used AI tools to generate it.
+                    But when I tried to connect my frontend with my agent backend,
+                    I kept hitting errors — and I had no idea what caused them.
+                    <br /><br />
+                    So my workflow became:
+                    <br /><br />
+                    **Chrome → DevTools → ChatGPT tab → VSCode → Chrome → ChatGPT → VSCode**
+                    Again. And again. And again.
+                    <br /><br />
+                    It was exhausting, slow, frustrating, and completely broke my focus.
                 </SectionText>
             </div>
 
-            {/* PROBLEM */}
+            {/* THE REAL PROBLEM */}
             <div>
-                <SectionTitle>The Problem</SectionTitle>
+                <SectionTitle>The Real Problem I Faced</SectionTitle>
                 <SectionText>
-                    Real productivity doesn’t come from speed —
-                    it comes from reducing friction.
-                    <br /><br />
-                    While building projects like Sampark,
-                    I realized most of my time wasn’t spent coding —
-                    it was spent **switching tabs**:
+                    I realized the real issue wasn’t the errors.
+                    The problem was the <b>time wasted switching tabs</b>.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "See an error → copy → open AI tab → paste → wait → read → return",
-                        "See a blog → don’t understand → switch to AI → ask → come back",
-                        "Debug something → need explanation → switch again",
-                        "Search something → lose track of where I was",
+                        "Every error required copying → pasting into ChatGPT",
+                        "Every explanation required switching to a new tab",
+                        "Every fix required jumping back into VSCode",
+                        "Some errors weren’t real problems — just outdated versions",
+                        "I was asking AI questions that didn’t even matter",
                     ]}
                 />
 
                 <SectionText>
-                    This process kills momentum.
-                    And when you lose momentum, you lose clarity.
+                    I wasn’t debugging code.
+                    I was fighting the workflow itself.
                 </SectionText>
             </div>
 
-            {/* IDEA */}
+            {/* WHY I BUILT ESMARTY */}
             <div>
-                <SectionTitle>The Core Idea</SectionTitle>
+                <SectionTitle>Why I Decided to Build eSmarty</SectionTitle>
                 <SectionText>
-                    I designed eSmarty as a tool that keeps you **inside the same tab,**
-                    no matter what you need — summarization, explanation, debugging, or guidance.
+                    One day, while switching tabs for the hundredth time,
+                    I asked myself:
+                    <br />
+                    <i>“Why can’t AI just stay inside the same tab I’m working on?”</i>
                     <br /><br />
-                    Instead of taking your mind out of the problem,
-                    eSmarty brings AI **into your current context**.
-                    <br /><br />
-                    The extension lives quietly in the browser,
-                    and reveals itself only when needed.
-                </SectionText>
-            </div>
-
-            {/* WHAT IT DOES */}
-            <div>
-                <SectionTitle>What eSmarty Does</SectionTitle>
-                <SectionText>
-                    eSmarty adds intelligence to your browser instantly:
+                    That single question gave birth to eSmarty —
+                    a <b>Gemini-powered Chrome extension </b>
+                    that lives on every tab and helps instantly.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Select code → click → get explanation instantly",
-                        "Select error → get exact reason + fix",
-                        "Highlight a paragraph → get summary",
-                        "Ask AI anything without leaving the tab",
-                        "Debug issues while staying on the same webpage",
-                        "Use Gemini inside the browser — not in a separate window"
+                        "Debug errors directly on the page",
+                        "Summarize any content without leaving the site",
+                        "Ask questions right in the same tab",
+                        "No switching between Chrome → ChatGPT → VSCode repeatedly",
                     ]}
                 />
 
                 <SectionText>
-                    It feels less like a tool,
-                    and more like a **smart assistant living inside the page itself.**
+                    eSmarty is not a chat popup —
+                    it’s a <b>productivity layer for the entire browser.</b>
                 </SectionText>
             </div>
 
-            {/* PERSONAL VALUE */}
+            {/* HOW IT WORKS */}
             <div>
-                <SectionTitle>How It Helped Me</SectionTitle>
+                <SectionTitle>How eSmarty Works</SectionTitle>
                 <SectionText>
-                    eSmarty wasn’t just a product —
-                    it became part of my daily workflow.
-                    <br /><br />
-                    While building Sampark, I used eSmarty to:
+                    I designed eSmarty to fit naturally into the browsing flow.
+                    Wherever you are, whatever you’re reading,
+                    you can highlight content and interact instantly.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Understand complex error messages instantly",
-                        "Debug faster without breaking focus",
-                        "Extract meaning from long blogs",
-                        "Generate small snippets quickly",
-                        "Validate logic without leaving the editor",
+                        "Select any code / paragraph → tap Summarize",
+                        "Get full explanation instantly from Gemini",
+                        "Ask follow-up questions right inside the extension",
+                        "Use it while coding, debugging, reading, or learning",
+                        "Never leave the current page",
                     ]}
                 />
 
                 <SectionText>
-                    This is the kind of tool you never realize you need
-                    until you use it once — and then you can’t work without it.
+                    It feels like a mini AI sitting inside your browser,
+                    focused only on the task in front of you.
                 </SectionText>
             </div>
 
-            {/* HOW I BUILT IT */}
+            {/* WHY GEMINI */}
             <div>
-                <SectionTitle>How I Built eSmarty</SectionTitle>
+                <SectionTitle>Why I Chose Gemini</SectionTitle>
                 <SectionText>
-                    I approached eSmarty like a product builder —
-                    not a random extension developer.
+                    I tested multiple models —
+                    but Gemini’s free-tier limits were simply better.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Designed the interaction model around *zero context-switching*",
-                        "Built Gemini API integration for fast explanations",
-                        "Designed a floating modal that works on any tab",
-                        "Created smart triggers (select → explain / debug)",
-                        "Optimized UI for speed, clarity, and minimalism",
+                        "Bigger free-tier usage window for rapid development",
+                        "Stable performance even without paid credits",
+                        "Fast responses for technical queries during debugging",
+                        "Ideal for prototyping extensions without upfront cost",
+                        "No need to buy API credits just to test an idea",
+                        "If you hit a rate limit, switching models keeps the flow uninterrupted",
+                        "Perfect for developers who want powerful AI without spending money at early stages",
+
                     ]}
                 />
 
                 <SectionText>
-                    Every feature was designed around the same goal:
-                    **How can I reduce the steps it takes to get clarity?**
+                    It made eSmarty fast, affordable, and accessible for anyone.
                 </SectionText>
             </div>
 
-            {/* SYSTEM FEEL */}
+            {/* MY ROLE */}
             <div>
-                <SectionTitle>How the Experience Feels</SectionTitle>
+                <SectionTitle>How I Built It</SectionTitle>
                 <SectionText>
-                    eSmarty gives a sense of flow —
-                    the feeling that the answers are already there,
-                    waiting to be revealed inside the page.
+                    eSmarty was built from scratch as a personal productivity tool.
+                    I handled everything:
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "The UI feels light and instant",
-                        "Never blocks your screen",
-                        "Adapts to whatever text/code you highlight",
-                        "Feels like a small AI window attached to your task",
-                        "Creates momentum instead of breaking it",
+                        "Researching how developers actually debug",
+                        "Designing a UI that feels light, fast, and always available",
+                        "Building the Chrome extension architecture",
+                        "Integrating Gemini APIs flawlessly",
+                        "Testing real use cases on complex debugging flows",
                     ]}
                 />
 
                 <SectionText>
-                    It blends into your workflow, not interrupts it.
+                    The result was an extension that removed friction
+                    from every development task.
                 </SectionText>
             </div>
 
@@ -174,22 +170,22 @@ export default function ESmartyPage() {
             <div>
                 <SectionTitle>Impact</SectionTitle>
                 <SectionText>
-                    For developers, students, and product builders,
-                    eSmarty offers a simple but powerful value:
+                    eSmarty didn’t just save me a few seconds —
+                    it transformed my entire development workflow.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Less time switching tabs",
-                        "More time actually thinking and building",
-                        "Better focus and continuity",
-                        "Faster debugging and understanding",
-                        "A smoother, calmer workflow",
+                        "Debugging became 2× faster",
+                        "No more unnecessary tab switching",
+                        "Clarity improved because everything stayed in context",
+                        "Reading blogs, docs, or errors became effortless",
+                        "My development flow finally felt smooth",
                     ]}
                 />
 
                 <SectionText>
-                    It turns the browser into a smarter workspace.
+                    eSmarty became a natural part of how I think and build.
                 </SectionText>
             </div>
 
@@ -197,24 +193,23 @@ export default function ESmartyPage() {
             <div>
                 <SectionTitle>What I Learned</SectionTitle>
                 <SectionText>
-                    eSmarty taught me the power of building tools
-                    that reduce invisible friction.
+                    eSmarty taught me something simple but powerful:
+                    <br />
+                    <b>Productivity is not about speed — it’s about reducing friction.</b>
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Small tools can create huge productivity gains",
-                        "AI works best when it blends into the environment",
-                        "Context-switching is the biggest enemy of focus",
-                        "Extensions must feel invisible yet powerful",
-                        "Fast execution + clarity > fancy UI",
+                        "Building real value often starts with personal pain",
+                        "Sometimes the best ideas come from workflow frustration",
+                        "Tools don’t need to be huge — they need to be useful",
+                        "AI becomes powerful when it stays close to the user’s task",
                     ]}
                 />
 
                 <SectionText>
-                    For me, eSmarty represents the future of personal tooling —
-                    where AI becomes a natural part of your workflow,
-                    not a separate destination.
+                    eSmarty isn’t just an extension.
+                    It’s a reminder of how much smoother development can feel.
                 </SectionText>
             </div>
 

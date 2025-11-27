@@ -9,185 +9,206 @@ export default function EcoTrackPage() {
     return (
         <CaseLayout
             title="EcoTrack"
-            subtitle="A smart environment monitoring and reporting system designed for modern smart-city needs."
+            subtitle="A community-first waste reporting and environmental visibility system built for my hometown — Hazaribagh, Jharkhand."
         >
 
-            {/* STORY: BEGINNING */}
+            {/* STORY BEGINNING */}
             <div>
-                <SectionTitle>Where EcoTrack Started</SectionTitle>
+                <SectionTitle>Where EcoTrack Really Began</SectionTitle>
                 <SectionText>
-                    EcoTrack began as a simple question:
-                    *If cities can have cameras everywhere, why can’t they have environmental visibility too?*
+                    EcoTrack didn’t start as a product idea.
+                    It started as frustration.
                     <br /><br />
-                    Pollution levels spike without warning.
-                    Waste collection gets delayed.
-                    Noise and air quality vary hour to hour.
-                    And yet — most cities still track these things manually.
+                    I grew up in <b>Hazaribagh, Jharkhand</b> — a city full of potential,
+                    but struggling with one visible problem:
+                    <br />
+                    <i>waste everywhere, no system to manage it.</i>
                     <br /><br />
-                    EcoTrack was built to change that.
+                    People threw garbage on roads, drains, empty spots.
+                    Some waste stayed untouched for an entire week.
+                    Mosquitos, smell, pollution — it became part of daily life.
+                    <br /><br />
+                    And the worst part?
+                    <b> There was no proper system for citizens to report it, </b>
+                    and no platform for staff or government to coordinate.
+                    <br /><br />
+                    That’s when EcoTrack was born — not as a startup,
+                    but as something I wanted to <b>donate back to my city.</b>
                 </SectionText>
             </div>
 
-            {/* PROBLEM */}
+            {/* THE REAL PROBLEM */}
             <div>
-                <SectionTitle>The Problem</SectionTitle>
+                <SectionTitle>The Problem in My City</SectionTitle>
                 <SectionText>
-                    After studying how municipalities handle environmental tracking,
-                    we found three major gaps:
+                    Hazaribagh has cleaners, officers, and government staff —
+                    but <b>no digital system that connects everyone together. </b>
+                    After observing the problem closely, I found major gaps:
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "No real-time data about air, noise, or waste conditions",
-                        "Residents have no structured way to report environmental issues",
-                        "City officers make decisions reactively, not proactively",
+                        "Waste piles stayed in the same spot for days or weeks",
+                        "Citizens had no structured way to report any issue",
+                        "Cleaning staff never received real-time location-based tasks",
+                        "Government had zero visibility into what’s happening on the ground",
+                        "Communication between citizens → staff → admin was completely broken",
                     ]}
                 />
 
                 <SectionText>
-                    EcoTrack tries to shift cities from *reaction* to *readiness*.
+                    EcoTrack became my attempt to build a platform
+                    that simplifies reporting and accelerates response.
                 </SectionText>
             </div>
 
             {/* THE IDEA */}
             <div>
-                <SectionTitle>The Core Idea</SectionTitle>
+                <SectionTitle>Why I Built EcoTrack</SectionTitle>
                 <SectionText>
-                    EcoTrack works like a digital nervous system for a city.
-                    Instead of waiting for issues to escalate,
-                    it identifies them early and helps officers act quickly.
+                    I kept asking myself:
+                    <br />
+                    <i>“If we can track food delivery in real time, why not garbage pickup?”</i>
                     <br /><br />
-                    The system is designed around two pillars:
+                    EcoTrack was designed with a simple mission:
+                    <b> give citizens a voice and give staff visibility.</b>
+                    <br /><br />
+                    At its core, the platform revolves around two things:
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Real-time environmental data from sensors",
-                        "Structured issue reporting from citizens",
+                        "Simple reporting for citizens (photo + location)",
+                        "Clear action flow for staff and admin to resolve issues quickly",
                     ]}
                 />
 
                 <SectionText>
-                    When combined, these two signals create a powerful feedback loop.
+                    A small complaint can trigger real action —
+                    if the system connects the right people at the right time.
                 </SectionText>
             </div>
 
             {/* WHAT IT DOES */}
             <div>
-                <SectionTitle>What EcoTrack Does</SectionTitle>
+                <SectionTitle>What EcoTrack Enables</SectionTitle>
                 <SectionText>
-                    EcoTrack provides a single dashboard where environment officers,
-                    municipal staff, and citizens all interact with clarity.
-                </SectionText>
-
-                <BulletPoints
-                    items={[
-                        "Real-time air, noise, and temperature readings",
-                        "Smart alerts for pollution spikes",
-                        "Citizen reports about waste, contamination, leakage, or hazards",
-                        "Issue resolution tracking (assigned → verified → resolved)",
-                        "City-level analytics showing trends and hotspots",
-                    ]}
-                />
-
-                <SectionText>
-                    Cities get visibility.
-                    Residents get a voice.
-                    Officers get control.
-                </SectionText>
-            </div>
-
-            {/* MY ROLE */}
-            <div>
-                <SectionTitle>How I Built It</SectionTitle>
-                <SectionText>
-                    I built EcoTrack as a rapid prototyping project —
-                    focusing on clarity, data flow, and fast execution.
+                    EcoTrack connects four types of users:
+                    <br />
+                    <b>Citizens, Organizations (NGOs), Cleaning Staff, and Admin.</b>
                     <br /><br />
-                    My responsibilities included:
+                    Each one gets a tailored experience:
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Designing the entire system layout & workflows",
-                        "Creating the dashboard structure for officers",
-                        "Designing report flows for citizens",
-                        "Setting up modules for sensors, alerts, and issue tracking",
-                        "Using AI to speed up implementation without losing precision",
+                        "Citizens report waste instantly with photos and pinned locations",
+                        "Staff receive assigned tasks with accurate map directions",
+                        "Organizations manage their staff and view task updates",
+                        "Admins monitor the entire city from a single dashboard",
+                        "Every report moves through a clean workflow: Submitted → Assigned → Resolved",
                     ]}
                 />
 
                 <SectionText>
-                    Every screen was designed with the same principle:
-                    *show only what matters right now.*
+                    EcoTrack is designed to make cleaning the city
+                    faster, transparent, and well-coordinated.
                 </SectionText>
             </div>
 
-            {/* SYSTEM FEEL */}
+            {/* HOW I BUILT IT */}
+            <div>
+                <SectionTitle>How I Built EcoTrack</SectionTitle>
+                <SectionText>
+                    I built EcoTrack with a <b>clear intention — donate it to my city. </b>
+                    No commercial motive. Just impact.
+                    <br /><br />
+                    My work included:
+                </SectionText>
+
+                <BulletPoints
+                    items={[
+                        "Researching how waste management currently works in Hazaribagh",
+                        "Designing flows for four different user roles",
+                        "Architecting simple reporting + assignment + verification workflows",
+                        "Building the core system using Next.js and Firebase",
+                        "Using AI to accelerate development without compromising quality",
+                    ]}
+                />
+
+                <SectionText>
+                    EcoTrack was designed for people who aren’t tech-savvy,
+                    so everything had to be as simple as possible.
+                </SectionText>
+            </div>
+
+            {/* FEEL */}
             <div>
                 <SectionTitle>How the System Feels</SectionTitle>
                 <SectionText>
-                    EcoTrack feels fast, clear, and informative —
-                    like a “weather report for the environment,”
-                    but with actionable controls.
+                    EcoTrack feels like a “cleanliness control room”
+                    rather than a traditional app.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Real-time cards and indicators",
-                        "Simple reporting flow for citizens",
-                        "Analytics that reveal patterns and hotspots",
-                        "Clean maps with pollution levels",
-                        "A dashboard that reduces chaos instead of adding to it",
+                        "A structured, friendly interface for citizens",
+                        "Staff dashboard that shows tasks clearly",
+                        "Admin controls that give full visibility",
+                        "Smooth map-based reporting and tracking",
+                        "A flow that reduces delay and removes confusion",
                     ]}
                 />
 
                 <SectionText>
-                    Officers get information that’s organized, not overwhelming.
+                    The system makes reporting easier than complaining.
                 </SectionText>
             </div>
 
             {/* IMPACT */}
             <div>
-                <SectionTitle>Impact</SectionTitle>
+                <SectionTitle>Impact (Even Before Launch)</SectionTitle>
                 <SectionText>
-                    EcoTrack creates value in three layers:
+                    Even in its prototype form, EcoTrack showed how a city
+                    like Hazaribagh could function better:
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Citizens report issues instead of complaining on social media",
-                        "Municipal teams respond faster with real visibility",
-                        "City-level data improves planning and decision-making",
+                        "Faster cleaning because tasks reach staff instantly",
+                        "Reduced pollution hotspots through consistent reporting",
+                        "Better accountability for cleaning teams",
+                        "Structured communication between citizens and authorities",
+                        "A model that other small cities could adopt",
                     ]}
                 />
 
                 <SectionText>
-                    Even as a prototype, EcoTrack shows how a city can
-                    feel healthier, more transparent, and more efficient.
+                    EcoTrack isn’t just a tool.
+                    It’s a small step toward a cleaner city.
                 </SectionText>
             </div>
 
-            {/* LEARNING */}
+            {/* WHAT I LEARNED */}
             <div>
                 <SectionTitle>What I Learned</SectionTitle>
                 <SectionText>
-                    EcoTrack taught me how to build systems where multiple roles
-                    interact with the same data but in different ways.
+                    EcoTrack taught me that meaningful products can come
+                    from something as simple as observing your own environment.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "How to structure real-time dashboards",
-                        "How to design systems that blend sensors + humans",
-                        "How to simplify reporting flows for non-technical users",
-                        "How to combine clarity with speed using AI assistance",
+                        "How to design civic-tech workflows",
+                        "How to build systems for four different user types",
+                        "How to blend community needs with product clarity",
+                        "How to use AI to accelerate complex prototyping",
                     ]}
                 />
 
                 <SectionText>
-                    For me, EcoTrack is a reminder that great products often start
-                    with a simple question — *“Why doesn’t this exist already?”*
+                    EcoTrack will always be one of my most personal projects —
+                    because it was built for the streets I grew up walking on.
                 </SectionText>
             </div>
 

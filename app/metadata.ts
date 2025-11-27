@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nihal | Product Builder & AI-Augmented Developer",
+  title: "Kumar Nihal - Product Builder",
   description:
     "I build real products fast — combining AI, system design, and rapid execution. Explore my projects, case studies, skills, and experience as an AI-Augmented Developer and Product Builder.",
   metadataBase: new URL("https://your-domain.com"), // <-- Replace with your final domain

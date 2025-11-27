@@ -9,184 +9,225 @@ export default function SamparkPage() {
     return (
         <CaseLayout
             title="Sampark"
-            subtitle="A modern community operating system built to bring clarity, coordination, and structure into everyday society life."
+            subtitle="A community-first platform that connects housing, people, services, and everyday needs into one unified ecosystem."
         >
 
-            {/* STORY: BEGINNING */}
+            {/* ORIGIN STORY */}
             <div>
-                <SectionTitle>Where Sampark Started</SectionTitle>
+                <SectionTitle>Where Sampark Really Began</SectionTitle>
                 <SectionText>
-                    Sampark began with a simple observation:
-                    almost every society runs on scattered WhatsApp groups,
-                    manual lists, verbal updates, and random screenshots.
+                    Sampark didn’t start as a startup idea.
+                    It started from observing how disconnected people are when they move, live, or try to settle in a new place.
                     <br /><br />
-                    Residents feel unheard.
-                    Society heads feel overloaded.
-                    Providers don’t know what’s happening.
-                    And everything feels… messy.
+                    Whether it’s students shifting cities, employees relocating for jobs,
+                    society heads struggling to fill flats, or people searching for plumbers or tutors —
+                    <b>everyone faces the same confusion:</b>
+                    <br />
+                    <i>“Where do I find the right person or the right place?”</i>
                     <br /><br />
-                    I wanted to design something that made all of this effortless —
-                    without making people adopt ten new tools.
+                    I’m a community-driven person.
+                    I believe people feel safe when they know their surroundings,
+                    their neighbors, their services, their support system.
+                    <br /><br />
+                    But our cities don’t have a single platform for all of this.
+                    So Sampark became my answer.
                 </SectionText>
             </div>
 
-            {/* STORY: PROBLEM */}
+            {/* CORE PROBLEM */}
             <div>
-                <SectionTitle>The Real Problem</SectionTitle>
+                <SectionTitle>The Problem</SectionTitle>
                 <SectionText>
-                    When we studied how societies operate,
-                    we found three big pain points:
+                    The problems in housing and community life look different,
+                    but they all come from one root issue — <b>disconnection.</b>
+                    <br /><br />
+                    After studying how people actually live and move,
+                    I found these major gaps:
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Important updates get lost in chat noise",
-                        "Residents raise issues but don't know what happened next",
-                        "Society heads manage too many people without visibility",
+                        "Students don’t know where to find rooms or reliable roommates",
+                        "Employees relocating for work feel lost about societies and safety",
+                        "Society heads struggle to fill empty flats efficiently",
+                        "Residents have no quick way to find plumbers, tutors, electricians inside society",
+                        "Builders and flat owners have no proper place to list their spaces",
+                        "People can’t sell items or services within their own community easily",
+                        "Finding trustworthy help, friends, or local guides is very difficult",
                     ]}
                 />
 
                 <SectionText>
-                    Nothing was built specifically for community life.
-                    So we built Sampark.
+                    Sampark is my attempt to bring order, clarity,
+                    and connection into a space that’s usually full of confusion.
                 </SectionText>
             </div>
 
-            {/* STORY: THE IDEA */}
+            {/* THE IDEA */}
             <div>
-                <SectionTitle>The Core Idea</SectionTitle>
+                <SectionTitle>The Vision Behind Sampark</SectionTitle>
                 <SectionText>
-                    Instead of creating a giant monolithic app,
-                    I broke the system into simple modules —
-                    each solving one real problem at a time.
+                    I wanted to build something that solves not just one problem —
+                    but the entire ecosystem around living, shifting, and connecting.
                     <br /><br />
-                    And all modules quietly stitched together into
-                    one clean, consistent experience.
+                    Sampark is designed around one simple idea:
+                    <br />
+                    <b>“Everything you need around your home and community should live in one platform.”</b>
+                    <br /><br />
+                    Whether it's finding a room, a roommate, a neighbor you can trust,
+                    a tutor for your brother, a plumber, a society to move into,
+                    or even a place to sell your old table —
+                    Sampark brings everything together.
                 </SectionText>
             </div>
 
-            {/* STORY: WHAT IT DOES */}
+            {/* SYSTEM */}
             <div>
-                <SectionTitle>What Sampark Does</SectionTitle>
+                <SectionTitle>Who Uses Sampark</SectionTitle>
                 <SectionText>
-                    Sampark feels like a control center for a society.
+                    The platform is built for an entire community ecosystem:
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Announcements reach every resident instantly",
-                        "Help requests move through a clear lifecycle (raised → assigned → resolved)",
-                        "Providers & stores have their own space inside the society",
-                        "Chat becomes structured and real-time",
-                        "Residents know exactly what’s happening around them",
+                        "Members (normal residents)",
+                        "Society Heads",
+                        "Vendors / Service Providers",
+                        "Flat Owners & Builders",
+                        "Roommate Seekers",
+                        "Local Stores",
+                        "Admins managing the entire system",
                     ]}
                 />
 
                 <SectionText>
-                    No chaos. No confusion. Everything in one place.
+                    Each role sees the platform differently —
+                    but everyone shares the same environment.
                 </SectionText>
             </div>
 
-            {/* STORY: MY ROLE */}
+            {/* FEATURES NOW */}
+            <div>
+                <SectionTitle>What I’ve Built So Far (MVP)</SectionTitle>
+                <SectionText>
+                    Sampark’s MVP is already functional,
+                    designed with modular structure and rapid iteration.
+                </SectionText>
+
+                <BulletPoints
+                    items={[
+                        "Full authentication system",
+                        "Role-based dashboards for every user type",
+                        "Society module with flats, blocks, posting",
+                        "Posting system for selling, buying, services, and community needs",
+                        "Chat interface for communication",
+                        "Roommate + room listing flows",
+                        "Basic vendor and service directory",
+                        "Database structures for scalable modules",
+                    ]}
+                />
+
+                <SectionText>
+                    The core foundation is solid — now it needs polish, testing, and scaling.
+                </SectionText>
+            </div>
+
+            {/* FUTURE FEATURES */}
+            <div>
+                <SectionTitle>What’s Coming Next</SectionTitle>
+                <SectionText>
+                    Sampark is not a small app.
+                    It’s a future community network —
+                    and some of the upcoming modules include:
+                </SectionText>
+
+                <BulletPoints
+                    items={[
+                        "Online payment integration",
+                        "AI-powered recommendations for rooms, societies, jobs, and services",
+                        "Analytics for society admins and builders",
+                        "Neighborhood insights and trust profiles",
+                        "Advanced service marketplace",
+                        "Community events, notices, and announcements",
+                    ]}
+                />
+
+                <SectionText>
+                    These features turn Sampark from a tool into a living ecosystem.
+                </SectionText>
+            </div>
+
+            {/* MY ROLE */}
             <div>
                 <SectionTitle>How I Built It</SectionTitle>
                 <SectionText>
-                    I approached Sampark like a product builder —
-                    not a coder writing 1000s of lines of code.
-                    <br /><br />
-                    My focus was:
+                    I designed and built Sampark from scratch —
+                    not just as a developer, but as a product builder.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Designing clean, modular workflows",
-                        "Creating a simple mental model for how society operations should feel",
-                        "Breaking the system into understandable modules",
-                        "Designing predictable flows for every user role",
-                        "Using AI to speed up implementation, not to replace decision-making",
+                        "Designed flows for housing, communication, and community services",
+                        "Mapped modules like societies, rooms, roommate search, stores, posts",
+                        "Structured database and role-based logic",
+                        "Built dashboards and core UI foundations",
+                        "Used AI to accelerate coding and remove friction",
+                        "Iterated fast using rapid prototyping cycles",
                     ]}
                 />
 
                 <SectionText>
-                    Every module was crafted based on reasoning:
-                    *What do people actually do inside a society?*
+                    Sampark reflects my ability to design complex multi-role systems
+                    and execute them with clarity.
                 </SectionText>
             </div>
 
-            {/* STORY: SYSTEM FEEL */}
+            {/* IMPACT */}
             <div>
-                <SectionTitle>How the System Feels</SectionTitle>
+                <SectionTitle>Why Sampark Matters</SectionTitle>
                 <SectionText>
-                    Sampark is structured but never feels heavy.
-                    It feels like:
+                    Sampark isn’t just a project —
+                    it’s a platform that solves real human problems.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "One clean dashboard",
-                        "Clear sections for each module",
-                        "Instant feedback on every action",
-                        "Real-time updates when something changes",
-                        "Predictable behaviour across the entire system",
+                        "Helps students and workers find homes without stress",
+                        "Connects residents to helpful neighbors and services",
+                        "Gives society heads and builders visibility and reach",
+                        "Creates a trusted community network inside each society",
+                        "Makes shifting cities feel less lonely and confusing",
+                        "Builds connections between people who share the same environment",
                     ]}
                 />
 
                 <SectionText>
-                    The goal was to make the system feel like it always knows
-                    exactly what you want to do next.
+                    In a country where millions move between cities every year,
+                    a platform like Sampark can completely transform how communities form.
                 </SectionText>
             </div>
 
-            {/* STORY: IMPACT */}
-            <div>
-                <SectionTitle>Impact</SectionTitle>
-                <SectionText>
-                    For the first time, societies get:
-                </SectionText>
-
-                <BulletPoints
-                    items={[
-                        "Structured communication instead of noisy groups",
-                        "A clear system to track issues and resolutions",
-                        "A place for providers to operate professionally",
-                        "Real-time visibility for critical updates",
-                        "A calm digital environment that brings clarity",
-                    ]}
-                />
-
-                <SectionText>
-                    Residents feel heard.
-                    Heads feel organized.
-                    Providers feel informed.
-                    <br /><br />
-                    Sampark brings order where there was only noise.
-                </SectionText>
-            </div>
-
-            {/* STORY: LEARNING */}
+            {/* LEARNING */}
             <div>
                 <SectionTitle>What I Learned</SectionTitle>
                 <SectionText>
-                    Sampark taught me something important:
-                    great systems aren’t built with complexity —
-                    they’re built with clarity.
+                    Sampark taught me how to handle large-scale, multi-module systems
+                    and design flows that work for many user types at once.
                 </SectionText>
 
                 <BulletPoints
                     items={[
-                        "Designing around real human behavior",
-                        "Keeping modules clean and independent",
-                        "Making flows predictable, not fancy",
-                        "Balancing system design with fast execution",
-                        "Using AI to accelerate but using my mind to architect",
+                        "How to build a multi-role system from scratch",
+                        "How to design a community-driven product",
+                        "How to think in terms of ecosystems, not features",
+                        "How to use AI to speed up execution",
+                        "How to align product design with real human behavior",
                     ]}
                 />
 
                 <SectionText>
-                    For me, Sampark isn’t just a project.
-                    It’s proof that one person can build
-                    structured, calm, scalable systems —
-                    with the right thinking and the right tools.
+                    For me, Sampark is not just a product —
+                    it’s the foundation of my future startup.
                 </SectionText>
             </div>
 
