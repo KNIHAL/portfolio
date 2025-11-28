@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 
 import CaseLayout from "@/components/case/CaseLayout";
 import { SectionTitle } from "@/components/case/sections/SectionTitle";

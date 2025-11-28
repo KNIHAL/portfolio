@@ -4,6 +4,7 @@ import CaseLayout from "@/components/case/CaseLayout";
 import { SectionTitle } from "@/components/case/sections/SectionTitle";
 import { SectionText } from "@/components/case/sections/SectionText";
 import { BulletPoints } from "@/components/case/sections/BulletPoints";
+import { motion } from "framer-motion";
 
 export default function EcoTrackPage() {
     return (
@@ -210,6 +211,8 @@ export default function EcoTrackPage() {
                     EcoTrack will always be one of my most personal projects —
                     because it was built for the streets I grew up walking on.
                 </SectionText>
+
+
             </div>
 
         </CaseLayout>

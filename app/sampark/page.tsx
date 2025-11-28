@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import CaseLayout from "@/components/case/CaseLayout";
 import { SectionTitle } from "@/components/case/sections/SectionTitle";
 import { SectionText } from "@/components/case/sections/SectionText";
@@ -245,7 +245,7 @@ export default function SamparkPage() {
                         hover:bg-green-500/30 hover:border-green-300
                     "
                 >
-                    🌿 View EcoTrack Repository
+                    🌿 Join Sampark
                 </motion.a>
 
             </div>
