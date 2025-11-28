@@ -211,6 +211,25 @@ export default function ESmartyPage() {
                     eSmarty isn’t just an extension.
                     It’s a reminder of how much smoother development can feel.
                 </SectionText>
+                <motion.a
+                    href="https://github.com/KNIHAL/Esmarty"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="
+                        inline-block mt-16 px-7 py-3 rounded-xl
+                        text-white font-medium text-sm
+                        bg-purple-600/20 border border-purple-400/40
+                        backdrop-blur-xl
+                        shadow-[0_0_18px_rgba(180,0,255,0.25)]
+                        transition-all duration-300
+                        hover:bg-purple-500/30 hover:border-purple-300
+                    "
+                >
+                    ⚡ View eSmarty Repository
+                </motion.a>
+
             </div>
 
         </CaseLayout>
