@@ -212,6 +212,24 @@ export default function EcoTrackPage() {
                     because it was built for the streets I grew up walking on.
                 </SectionText>
 
+                <motion.a
+                    href="https://github.com/KNIHAL/EcoTrack"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="
+                        inline-block mt-16 px-7 py-3 rounded-xl
+                        text-white font-medium text-sm
+                        bg-green-600/20 border border-green-400/40
+                        backdrop-blur-xl
+                        shadow-[0_0_18px_rgba(0,255,180,0.25)]
+                        transition-all duration-300
+                        hover:bg-green-500/30 hover:border-green-300
+                    "
+                >
+                    🌿 View EcoTrack Repository
+                </motion.a>
 
             </div>
 
